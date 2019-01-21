@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage[left=2.75cm, right=2.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{systeme}
+\title{\large{\vspace{-1.0cm}CS-2050, B1, TA: Unknown, Instructor: Sweat, Monica \\ HW2 ; Alexander Guo}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1.5cm}
+
+\textbf{Section 1.2}
+
+\begin{enumerate}
+
+\item[8.)]
+
+\begin{enumerate}
+
+\item[a.] But means 'and', so: $r \wedge \neg p$
+
+\item[b.] Whenever means 'if': $q \rightarrow (r \wedge p)$
+
+\item[c.] $\neg r \rightarrow \neg q$
+
+\item[d.] $(\neg p \wedge r) \rightarrow q$
+
+\end{enumerate}
+
+\item[20.)] If A is a knight, then he is telling the truth, so both A and B are knights. Person B must also be a night and is telling the truth, however, he claims that person A is a knave, which raises a contradiction. If A is a knave, then he is lying, and not both of them are knights. B could then be a knight, claiming that A is a knave, which certainly would be true under this condition. Therefore, we conclude that A is a knave, and B is a knight.
+
+\item[22.)] We cannot draw any conclusions about these two people, since A and B could be either knave or knight.
+
+\item[36.)]
+
+\begin{enumerate}
+
+\item[a.] If alice is telling the truth, then carlos is guilty, which means he's lying about diana. This means diana is telling the truth, which raises a contradiction due to their being two true statements. If john is telling the truth, then alice is lying, which means carlos is telling the truth, which again raises a contradiction. If carlos tells the truth, diana is guilty, but that would mean John's statement is also true. Finally, only diana can be the one truth teller, since Alice is lying about carlos, carlos is lying about diana, and john is lying about his innocence. Therefore, John was the culprit.
+
+\item[b.] If Alice is lying, carlos is telling the truth, which means that diana is lying, which raises a contradiction. If carlos is lying, then Alice's statement is true, and Diana is also telling the truth, which means that John is also telling the truth. If Diana is lying, that means carlos is telling the truth, but it means also that Alice is lying, which raises a contradiction. Finally, if John is lying, it means diana is telling the truth, which means carlos is also lying, which again raises a contradiction. Therefore, Carlos is the culprit.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\textbf{Section 1.3}
+
+\begin{enumerate}
+
+\item[8.)]
+
+\begin{enumerate}
+
+\item[c.] James is not young or he is not strong
+
+\item[d.] Rita will not move to Oregon and Washington.
+
+\end{enumerate}
+
+\item[10.)]
+
+\begin{enumerate}
+
+\item[c.] $\begin{array}{cc|c|c|c} p & q & (p \rightarrow q) & [p \wedge (p \rightarrow q)] & [p \wedge (p \rightarrow q)] \rightarrow q \\ \hline T & T & T & T & T \\ T & F & F & F & T \\ F & T & F & T & T \\ F & F & T & F & T \end{array}$ 
+
+\end{enumerate}
+
+\item[12.)]
+
+\begin{enumerate}
+
+\item[c.] Because the hypothesis is true, then $[p \wedge (p \rightarrow q)]$ must be true. Given that there is a $\wedge$, it means $(p \rightarrow q)$ must also be true, which means that q is true. We then deduce that $[p \wedge (p \rightarrow q)] \rightarrow q$ is a true hypothesis.
+
+\end{enumerate}
+
+\item[22.)] In order for $(p \rightarrow q) \wedge (p \rightarrow r)$ to be true, both $(p \rightarrow q)$ and $(p \rightarrow r)$ have to be true, which means that p has to be the same value as both q and r. Given this, $p \rightarrow (q \wedge r)$ will be true under the same conditions when all three have the same value. Therefore, they are logically equivalent.
+
+\item[24.)] On order for $(p \rightarrow q) \vee (p \rightarrow r)$ to be false, both $(p \rightarrow q)$ and $(p \rightarrow r)$ have to be false, which means p is the opposite value of both q and r. Given this,  $p \rightarrow (q \wedge r)$ will be false under the same circumstances since p will be different from $(q \wedge r)$. Therefore, they are logically equivalent.
+
+\end{enumerate}
+
+\end{document}
